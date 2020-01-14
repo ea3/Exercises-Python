@@ -81,49 +81,14 @@ def almost_there(n):
 print(almost_there(104))
 
 
+############### Given a list of ints, return true if the aarray contains a 3 next to a 3 somewhere.
 
+def has_33(num):
+	for i in range(0, len(num) - 1):
+		if num[i] == 3 and num[i+1] == 3:
+			return True
+	return False
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(has_33([1,3,3]))
 
 
