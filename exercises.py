@@ -60,8 +60,25 @@ def old_macdonald(name):
 print(old_macdonald("macdonald"))
 
 
+def master_yoda(text):
+	wordlist = text.split()
+	reverse_word_list = wordlist[::-1]
+
+	return " ".join(reverse_word_list)
+
+print(master_yoda("El amor es una magia"))
 
 
+l = range(61)
+
+print l[0:50:10]
+
+
+########################
+def almost_there(n):
+	return (abs(100 - n) <= 10) or(abs(200 - n) <= 10)
+
+print(almost_there(104))
 
 
 
