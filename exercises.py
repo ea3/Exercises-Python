@@ -1,20 +1,10 @@
 def lesser_of_two_evens(a,b):
 	if (a % 2 ==0) and (b % 2 == 0):
-		if(a < b):
-			return a
-		elif(b < a):
-			return b
-		else:
-			print("The numbers are equal")
+		return min(a,b)
 	else:
-		if(a > b):
-			return a
-		elif(b > a):
-			return b
-		else:
-			print("The numbers are equal")
+		return max(a,b)
 
-print(lesser_of_two_evens(2, 2))
+print(lesser_of_two_evens(10,20))
 
 
 
@@ -25,7 +15,7 @@ print(lesser_of_two_evens(2, 2))
 
 
 def animal_crackers(text):
-	str = text.split()
+	str = text.lower().split()
 	#print(str[0][0])
 	#print(str[1][0])
 	#print(str)
@@ -54,3 +44,69 @@ def makes_twenty(number1, number2):
 
 
 makes_twenty(2,3)
+
+
+
+##############Write a function that capitalizesthe first and fourth letters of a name 
+
+def old_macdonald(name):
+	first_letter = name[0].upper()
+	inbetween = name[1:3]
+	fourth_letter = name[3].upper()
+	rest = name[4:]
+
+	return first_letter + inbetween + fourth_letter + rest 
+
+print(old_macdonald("macdonald"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
