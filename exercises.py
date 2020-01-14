@@ -92,3 +92,108 @@ def has_33(num):
 print(has_33([1,3,3]))
 
 
+######################## Given a string, return a
+ #string whre for every character in the original there are three characters
+
+def paper_doll(text):
+	result = ''
+ 	for char in text:
+ 		result += char*3
+ 	return result
+
+
+print(paper_doll("Emilio"))
+
+
+#### Blackjack!
+##Given 3  integers between 1 and 11, if their sum is less than or equal to 21, return their sum
+##If their sum exceed 21 and there is an eleven, reduce the total sum by 10.
+##Finally, if the sum(even after adjustment) exceeds 21, return "BUST"
+
+def blackjack(a,b,c):
+	if sum([a,b,c]) <= 21:
+		return sum([a,b,c])
+	elif 11 in [a,b,c] and sum([a,b,c]) - 10 <= 21:
+		return sum([a,b,c]) - 10
+	else:
+		return "BUST"
+
+
+print(blackjack(9,9,9))
+
+
+###### Return the sum of the numbers in the array, except ignore sections
+##of numbers starting with a 6 and extending to the next 9(every 6 will be 
+### followed by at least one nine). Return 0 for no numbrs. 
+
+def summer_69(arr):
+	total = 0
+	add = True
+	for num in arr:
+		while add:
+			if num != 6:
+				total += num
+				break
+			else:
+				add = False
+
+		while not add:
+			if num != 9:
+				break
+			else:
+				add = True
+				break
+	return total
+
+print(summer_69([4,5,6,7,8,9]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
